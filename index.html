@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anurag Kumar Singh | Data &amp; Software Engineer</title>
+<meta name="description" content="Portfolio of Anurag Kumar Singh: data analytics, Power BI and full-stack engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05070f;--ink:#f1f4fb;--muted:#9aa5c3;--glass:rgba(14,19,40,.62);--edge:rgba(160,185,255,.16);--accent:#6ea8ff;--mint:#7cf2d4;
+--display:'Sora','Segoe UI',system-ui,sans-serif;--body:'Inter','Segoe UI',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;background:radial-gradient(ellipse at 50% 20%,#101a3a,var(--bg) 72%)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.02em;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 28px}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0 0 .9em}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:10;background:linear-gradient(var(--bg),transparent)}
+.bar{max-width:1120px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.brand{font:700 1.05rem var(--display);color:var(--ink);text-decoration:none}
+.brand i{font-style:normal;color:var(--accent)}
+nav{display:flex;gap:2px;background:var(--glass);border:1px solid var(--edge);border-radius:99px;padding:4px;backdrop-filter:blur(14px)}
+nav a{padding:6px 14px;border-radius:99px;font-size:.88rem;font-weight:500;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}nav a.on{background:rgba(110,168,255,.16);color:var(--ink)}
+#pg{position:absolute;left:0;bottom:0;height:2px;width:0;background:linear-gradient(90deg,var(--accent),var(--mint))}
+@media (max-width:760px){nav{display:none}}
+main{position:relative;z-index:1}
+.panel{min-height:100vh;display:flex;align-items:center;padding:110px 24px 70px}
+.in{width:100%;max-width:1120px;margin:0 auto}
+.glass{position:relative;background:var(--glass);border:1px solid var(--edge);border-radius:22px;padding:28px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 20px 60px -20px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.07)}
+.hero .in{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:center}
+@media (max-width:900px){.hero .in{grid-template-columns:1fr}}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--edge);border-radius:99px;background:var(--glass);font-size:.86rem;font-weight:500;margin-bottom:22px}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(124,242,212,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(124,242,212,0)}100%{box-shadow:0 0 0 0 rgba(124,242,212,0)}}
+.hero h1{font-size:clamp(2.8rem,7.6vw,5.4rem);font-weight:800;letter-spacing:-.04em;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+.hero h1 span{background:linear-gradient(100deg,var(--accent),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:500 clamp(1.05rem,2.2vw,1.35rem) var(--display);color:var(--muted);margin:18px 0 14px}
+.lede{color:var(--muted);max-width:52ch;font-size:1.05rem}
+@keyframes up{from{opacity:0;transform:translateY(24px)}}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font:600 .95rem var(--body);text-decoration:none;border:1px solid var(--edge);color:var(--ink);background:rgba(255,255,255,.05);cursor:pointer}
+.btn:hover{background:rgba(255,255,255,.1)}
+.btn.p{background:linear-gradient(100deg,var(--accent),#8f9bff);color:#06091a;border:0}
+.btn.p:hover{filter:brightness(1.08)}
+.card-id{text-align:center}
+.mono{width:104px;height:104px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;font:800 2rem var(--display);color:#06091a;background:linear-gradient(135deg,var(--accent),var(--mint))}
+.kv{display:grid;gap:10px;text-align:left;margin:20px 0 0;padding:18px 0 0;border-top:1px solid var(--edge);font-size:.93rem}
+.kv div{display:flex;justify-content:space-between;gap:16px}.kv span{color:var(--muted)}.kv b{font-weight:500;text-align:right}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:34px}
+.stats b{display:block;font:800 1.9rem var(--display);letter-spacing:-.02em}.stats span{color:var(--muted);font-size:.86rem}
+.cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:14px 0 0}
+.chips li{padding:5px 12px;border-radius:8px;border:1px solid var(--edge);font-size:.88rem;background:rgba(255,255,255,.04)}
+.meta{color:var(--muted);font-size:.9rem;margin:4px 0 12px}
+ul.pts{margin:0;padding-left:18px}ul.pts li{margin-bottom:7px;color:#d6dcee}
+.tl{display:grid;gap:18px;border-left:1px solid var(--edge);margin-left:7px;padding-left:26px}
+.tl .glass{position:relative}.tl .glass::before{content:"";position:absolute;left:-34px;top:34px;width:14px;height:14px;border-radius:50%;background:var(--mint);border:3px solid var(--bg)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,500px),1fr));perspective:1100px}
+.tilt{transition:transform .15s ease-out;will-change:transform}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:10px 0 12px}
+.tags li{font-size:.76rem;font-weight:600;padding:3px 10px;border-radius:99px;background:rgba(110,168,255,.14);color:var(--accent)}
+.edu div{padding:14px 0;border-bottom:1px solid var(--edge);display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 20px}
+.edu div:last-child{border:0}.edu span{color:var(--muted)}
+.certs{columns:2 320px;column-gap:32px;list-style:none;padding:0;margin:0}
+.certs li{break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--edge);font-size:.94rem}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.badges span{padding:7px 14px;border-radius:99px;border:1px solid var(--mint);color:var(--mint);font-weight:500;font-size:.86rem}
+.end{text-align:center}.end h2{font-size:clamp(2.1rem,6vw,3.8rem)}
+.end .sub{margin-inline:auto;max-width:46ch}
+.mail{display:inline-flex;align-items:center;gap:12px;font:600 clamp(1.05rem,3.4vw,1.5rem) var(--display);padding:16px 26px;border-radius:16px;border:1px solid var(--edge);background:var(--glass);color:var(--ink);cursor:pointer;backdrop-filter:blur(14px)}
+.mail small{font:500 .78rem var(--body);color:var(--mint);padding:3px 9px;border:1px solid var(--mint);border-radius:99px}
+.mail:hover{border-color:var(--accent)}
+.end .row{justify-content:center}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:600;opacity:0;transition:.25s;z-index:20;pointer-events:none}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@property --ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes spin{to{--ang:360deg}}
+.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:conic-gradient(from var(--ang),transparent 0 55%,var(--accent) 78%,var(--mint) 90%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;opacity:0;transition:opacity .35s;pointer-events:none;animation:spin 4s linear infinite}
+.glass:hover::after{opacity:1}
+#cur{position:fixed;left:0;top:0;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;background:radial-gradient(circle,rgba(110,168,255,.15),transparent 65%);pointer-events:none;z-index:2;mix-blend-mode:screen;will-change:transform}
+@media (hover:none){#cur{display:none}}
+.rv{opacity:0;transform:translateY(34px) scale(.98);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.rv.in2{opacity:1;transform:none}
+.marq{overflow:hidden;border-block:1px solid var(--edge);background:rgba(8,12,28,.55);backdrop-filter:blur(10px);position:relative;z-index:1}
+.marq div{display:flex;gap:40px;width:max-content;padding:15px 0;animation:mq 36s linear infinite;font:600 .95rem var(--display);color:var(--muted)}
+.marq span::before{content:"\2726";color:var(--mint);margin-right:40px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hero h1 span{background-image:linear-gradient(100deg,var(--accent),var(--mint),var(--accent));background-size:200% auto;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200% center}}
+h2::after{content:"";display:block;width:56px;height:3px;margin-top:10px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--mint))}
+.end h2::after{margin-inline:auto}
+.stats b{background:linear-gradient(100deg,#fff,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn,.mail{transition:transform .2s ease-out,background .2s,border-color .2s}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div id="cur" aria-hidden="true"></div>
+<header>
+  <div class="bar"><a class="brand" href="#top">Anurag Kumar Singh</a>
+  <nav aria-label="Primary"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav></div>
+  <div id="pg"></div>
+</header>
+<main id="top">
+<section class="panel hero"><div class="in">
+  <div>
+    <span class="pill">Open to internships and entry-level roles</span>
+    <h1>Anurag<br><span>Kumar Singh</span></h1>
+    <p class="role">I build <b id="tw" style="color:var(--mint);font-weight:600"></b></p>
+    <p class="lede">Computer Science Engineering undergraduate who turns raw data into dashboards people act on, and builds full-stack and cloud applications around it.</p>
+    <div class="row"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Get in touch</a>
+    <a class="btn" href="https://github.com/AnuragSingh259" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/anurag-singh-39a71b254" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+  <aside class="glass card-id" aria-label="Quick facts">
+    <div class="mono" aria-hidden="true">AKS</div>
+    <h3>Anurag Kumar Singh</h3>
+    <p class="meta" style="margin-bottom:0">B.Tech Computer Science Engineering</p>
+    <div class="kv">
+      <div><span>Location</span><b>Jamshedpur, India</b></div>
+      <div><span>University</span><b>Arka Jain University</b></div>
+      <div><span>Graduating</span><b>June 2027</b></div>
+      <div><span>Focus</span><b>Data, BI, Cloud</b></div>
+    </div>
+  </aside>
+</div></section>
+
+<div class="marq" aria-hidden="true"><div><span>Power BI</span><span>DAX</span><span>Python</span><span>React.js</span><span>PHP</span><span>MySQL</span><span>IBM SPSS Modeler</span><span>Cognos</span><span>Cloud Architecture</span><span>Generative AI</span><span>Data Modeling</span><span>Tailwind CSS</span><span>Power BI</span><span>DAX</span><span>Python</span><span>React.js</span><span>PHP</span><span>MySQL</span><span>IBM SPSS Modeler</span><span>Cognos</span><span>Cloud Architecture</span><span>Generative AI</span><span>Data Modeling</span><span>Tailwind CSS</span></div></div>
+
+<section class="panel" id="about"><div class="in">
+  <h2>About</h2><p class="sub">Analytical, detail-oriented and at home in collaborative teams.</p>
+  <div class="cols">
+    <div class="glass"><h3>Who I am</h3><p style="margin-top:12px;color:#d6dcee">I study Computer Science Engineering at Arka Jain University in a programme associated with IBM. I build visualizations and dashboards that support data-backed decisions, and I enjoy turning messy datasets into something clear.</p></div>
+    <div class="glass"><h3>Technical</h3><ul class="chips"><li>Data Analysis</li><li>Data Visualization</li><li>Python</li><li>Generative AI</li><li>Software Debugging</li><li>Cloud Architecture</li></ul>
+      <h3 style="margin-top:22px">IBM suite</h3><ul class="chips"><li>SPSS Modeler</li><li>Cognos Dashboard Embedded</li><li>IBM Cloud Essentials</li></ul></div>
+    <div class="glass"><h3>Professional</h3><ul class="chips"><li>Design Thinking</li><li>Project Oversight</li><li>Agile Teamwork</li><li>Strategic Communication</li><li>Creative Problem Solving</li><li>Relationship Building</li></ul></div>
+  </div>
+  <div class="stats">
+    <div class="glass"><b>30+</b><span>custom DAX measures and KPIs</span></div><div class="glass"><b>Top 30</b><span>of 160 teams, Hackathon 1.0</span></div>
+    <div class="glass"><b>150+</b><span>attendees supported</span></div><div class="glass"><b>2</b><span>engineering internships</span></div>
+  </div>
+</div></section>
+
+<section class="panel" id="experience"><div class="in">
+  <h2>Experience</h2><p class="sub">Two internships in industrial systems and business intelligence.</p>
+  <div class="tl">
+    <article class="glass"><h3>Software &amp; Technical Engineering Intern</h3>
+      <p class="meta">Tata Motors, Jamshedpur | 5 June to 5 July 2026</p>
+      <ul class="pts"><li>Analyzed industrial data workflows and operational systems to find bottlenecks and propose automation strategies.</li><li>Supported digital transformation work with cross-functional engineers and monitored internal database performance.</li><li>Documented workflows and system requirements across manufacturing units, and reviewed software modules for efficiency.</li></ul></article>
+    <article class="glass"><h3>Software Engineering Intern</h3>
+      <p class="meta">Flandez Software Solutions LLP, Jamshedpur | May to June 2025</p>
+      <ul class="pts"><li>Built interactive Power BI dashboards and visualizations to support stakeholder decisions.</li><li>Wrote clean, modular code and debugged system programs across the development lifecycle.</li><li>Gathered and documented project requirements, and researched emerging technologies for upcoming initiatives.</li></ul></article>
+  </div>
+</div></section>
+
+<section class="panel" id="projects"><div class="in">
+  <h2>Projects and achievements</h2><p class="sub">Hover over a card to tilt it.</p>
+  <div class="grid">
+    <article class="glass tilt"><h3>Airbnb Clone</h3>
+      <ul class="tags"><li>React.js</li><li>Tailwind CSS</li><li>PHP</li><li>MySQL</li><li>Clerk Auth</li></ul>
+      <ul class="pts"><li>Full-stack rental platform with search, filters and a booking system.</li><li>PHP REST APIs and a 5+ table MySQL schema for users, properties, bookings, reviews and wishlists.</li><li>Role-based access for users, hosts and admins, with host and admin dashboards.</li></ul></article>
+    <article class="glass tilt"><h3>Enterprise BI &amp; Analytics Suite</h3>
+      <ul class="tags"><li>Power BI</li><li>Power Query</li><li>DAX</li><li>Data Modeling</li></ul>
+      <ul class="pts"><li>Dashboards for ATM transactions, e-commerce, HR attrition and corporate sales.</li><li>Star and Snowflake models with 30+ custom DAX measures.</li><li>Drill-down pages, Smart Narratives and threshold-based alerts.</li></ul>
+      <p style="margin:14px 0 0"><a href="https://1drv.ms/b/c/a5307d3a6300fc95/IQCBhcztI5FaTqI0WSMv_mh_AZLt6BbouekK-v3fa6iiAps?e=KLCdA0" target="_blank" rel="noopener"><b>Read the project report</b></a></p></article>
+    <article class="glass tilt"><h3>Hackathon 1.0: Finalist</h3><p class="meta">Technical Developer</p>
+      <ul class="pts"><li>Ranked in the Top 30 of 160 teams from across the country.</li><li>Built a data-centric prototype and pitched it to industry judges.</li></ul></article>
+    <article class="glass tilt"><h3>Hack Horizon 2.0: Volunteer Representative</h3><p class="meta">Jamshedpur | May 2026</p>
+      <ul class="pts"><li>Led social media promotion that lifted event registrations.</li><li>Managed 150+ attendees and coordinated 15 volunteers.</li></ul></article>
+  </div>
+</div></section>
+
+<section class="panel" id="credentials"><div class="in"><div class="glass">
+  <h2>Education and credentials</h2><p class="sub">Verified IBM certifications and badges.</p>
+  <div class="edu">
+    <div><strong>B.Tech Computer Science Engineering (associated with IBM)<br><span>Arka Jain University, Jamshedpur</span></strong><span>Expected June 2027</span></div>
+    <div><strong>Higher Secondary (Class 12), 68%<br><span>Vig English School, Jamshedpur</span></strong><span>April 2023</span></div>
+    <div><strong>Secondary (Class 10), 72%<br><span>Vig English School, Jamshedpur</span></strong><span>April 2021</span></div>
+  </div>
+  <ul class="certs" style="margin-top:20px">
+    <li>SPSS Modeler, Foundation Course: <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/6aa92bf43d044246af1b6a05214af2b9" target="_blank" rel="noopener">verify</a></li>
+    <li>Cognos Dashboard Embedded: <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/4f1c10460d434ecea00787a143e12c48" target="_blank" rel="noopener">verify</a></li>
+    <li>Cloud Application Developer: <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/d866ea1130a84bea852377e2574e3150" target="_blank" rel="noopener">verify</a></li>
+    <li>IBM Cloud Essentials: <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/06d183703b8e48e7aa1c533b6ea4f9dd" target="_blank" rel="noopener">verify</a></li>
+    <li>Introduction to Python Programming: <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/46dc0f7702b9482aaf8a7309bc0a8095" target="_blank" rel="noopener">verify</a></li>
+    <li>Generative AI Foundation</li>
+    <li>SPSS Modeler, Foundations: <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/6aa92bf43d044246af1b6a05214af2b9" target="_blank" rel="noopener">verify</a></li>
+    <li>Streamlining Your Work with Microsoft Copilot</li>
+    <li>Modeling Software Systems using UML: <a href="https://coursera.org/verify/K4Z82DTA1XFD" target="_blank" rel="noopener">verify</a></li>
+  </ul>
+  <div class="badges"><span>IBM Badge: Cloud Essentials</span><span>IBM Badge: Data Science Professional</span><span>IBM Badge: Data Visualization Expert</span></div>
+</div></div></section>
+
+<section class="panel end" id="contact"><div class="in">
+  <h2>Let’s work together</h2>
+  <p class="sub">Open to internships and entry-level roles in data, BI and software engineering.</p>
+  <button class="mail" id="copy" data-mail="sikhasingh259@gmail.com" aria-label="Copy email address sikhasingh259@gmail.com">sikhasingh259@gmail.com <small>Tap to copy</small></button>
+  <div class="row"><a class="btn p" href="mailto:sikhasingh259@gmail.com">Send an email</a><a class="btn" href="tel:+916201660116">+91 62016 60116</a>
+  <a class="btn" href="https://www.linkedin.com/in/anurag-singh-39a71b254" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/AnuragSingh259" target="_blank" rel="noopener">GitHub</a></div>
+  <p style="margin-top:34px;color:var(--muted);font-size:.9rem">Jamshedpur, Jharkhand, India 831015</p>
+</div></section>
+</main>
+<div id="toast" role="status">Email copied</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,mx=0,my=0,P=0;
+  var $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+
+  $$('.tilt').forEach(function(c){
+    c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      c.style.transform='rotateY('+(x*9)+'deg) rotateX('+(-y*9)+'deg) translateZ(6px)'});
+    c.addEventListener('pointerleave',function(){c.style.transform=''});
+  });
+
+  var toast=document.getElementById('toast');
+  document.getElementById('copy').addEventListener('click',function(){
+    var m=this.dataset.mail;function done(s){toast.textContent=s;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1800)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m).then(function(){done('Email copied')},function(){done(m)})}else{done(m)}
+  });
+
+  var cur=document.getElementById('cur'),cx=0,cy=0,gx=0,gy=0;
+  addEventListener('pointermove',function(e){gx=e.clientX;gy=e.clientY},{passive:true});
+  if(!reduce)(function mv(){cx+=(gx-cx)*.12;cy+=(gy-cy)*.12;cur.style.transform='translate('+cx+'px,'+cy+'px)';requestAnimationFrame(mv)})();
+  var tw=document.getElementById('tw'),ws=['dashboards that explain.','data models that scale.','full-stack web apps.','cloud-ready tools.'],wi=0,ci=0,dl=false;
+  if(reduce){tw.textContent=ws[0]}else{(function ty(){var w=ws[wi];ci+=dl?-1:1;tw.textContent=w.slice(0,ci);var s=dl?30:70;if(!dl&&ci===w.length){dl=true;s=1400}else if(dl&&ci===0){dl=false;wi=(wi+1)%ws.length;s=300}setTimeout(ty,s)})()}
+  $$('.stats b').forEach(function(b){var m=b.textContent.match(/^(\D*)(\d+)(\D*)$/);if(!m||reduce)return;b.dataset.to=m[2];b.dataset.pre=m[1];b.dataset.suf=m[3];b.textContent=m[1]+'0'+m[3]});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;io.unobserve(el);
+    if(el.dataset.to){var t0=null,to=+el.dataset.to;(function f(t){t0=t0||t;var k=Math.min((t-t0)/1200,1);el.textContent=el.dataset.pre+Math.round(to*(1-Math.pow(1-k,3)))+el.dataset.suf;if(k<1)requestAnimationFrame(f)})(performance.now())}
+    else{el.classList.add('in2');el.addEventListener('transitionend',function h(ev){if(ev.propertyName==='opacity'){el.classList.remove('rv','in2');el.removeEventListener('transitionend',h)}})}
+  })},{threshold:.15});
+  if(!reduce){$$('.stats b[data-to]').forEach(function(b){io.observe(b)});$$('.glass').forEach(function(g,i){g.classList.add('rv');g.style.setProperty('--d',(i%4)*.08+'s');io.observe(g)});
+    $$('.btn,.mail').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})})}
+
+  var pg=document.getElementById('pg'),links=$$('nav a'),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function spy(){
+    var h=document.documentElement.scrollHeight-innerHeight;P=h>0?scrollY/h:0;pg.style.width=P*100+'%';
+    var cur=-1;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<innerHeight*.45)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+  }
+  addEventListener('scroll',spy,{passive:true});spy();
+  addEventListener('pointermove',function(e){mx=e.clientX/innerWidth*2-1;my=-(e.clientY/innerHeight*2-1)},{passive:true});
+
+  try{
+    if(!window.THREE)throw 0;
+    var canvas=document.getElementById('gl'),R=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+    R.setPixelRatio(Math.min(devicePixelRatio,2));
+    var S=new THREE.Scene();S.fog=new THREE.FogExp2(0x05070f,.034);
+    var cam=new THREE.PerspectiveCamera(55,1,.1,120);
+    S.add(new THREE.AmbientLight(0x7f95ff,.6));
+    var d=new THREE.DirectionalLight(0xffffff,1);d.position.set(6,12,8);S.add(d);
+    var pl=new THREE.PointLight(0x7cf2d4,1.6,26);S.add(pl);
+    var grid=new THREE.GridHelper(80,80,0x1a2a5c,0x0e1634);grid.position.y=-.02;S.add(grid);
+    var PN=520,pa=new Float32Array(PN*3),k;for(k=0;k<PN;k++){pa[k*3]=(Math.random()-.5)*52;pa[k*3+1]=Math.random()*17;pa[k*3+2]=(Math.random()-.5)*52-8}
+    var pg2=new THREE.BufferGeometry();pg2.setAttribute('position',new THREE.BufferAttribute(pa,3));
+    var pts=new THREE.Points(pg2,new THREE.PointsMaterial({color:0x9ec5ff,size:.08,transparent:true,opacity:.85,depthWrite:false,blending:THREE.AdditiveBlending}));S.add(pts);
+    var ring=new THREE.Mesh(new THREE.TorusGeometry(3.4,.035,12,140),new THREE.MeshBasicMaterial({color:0x7cf2d4,transparent:true,opacity:.6})),ring2=new THREE.Mesh(new THREE.TorusGeometry(2.4,.025,12,120),new THREE.MeshBasicMaterial({color:0x6ea8ff,transparent:true,opacity:.6}));S.add(ring);S.add(ring2);
+
+    var N=innerWidth<700?19:27,GAP=1,M=N*N;
+    var mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(.62,1,.62),new THREE.MeshStandardMaterial({roughness:.3,metalness:.35}),M);S.add(mesh);
+    var o=new THREE.Object3D(),col=new THREE.Color(),c1=new THREE.Color(0x1d3a8f),c2=new THREE.Color(0x7cf2d4);
+    var ray=new THREE.Raycaster(),plane=new THREE.Plane(new THREE.Vector3(0,1,0),0),hit=new THREE.Vector3(99,0,99),m2=new THREE.Vector2();
+
+    function size(){R.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+    addEventListener('resize',function(){size();frame(performance.now())});size();
+    var cp=new THREE.Vector3(0,8,14),look=new THREE.Vector3();
+    function frame(ms){
+      var t=reduce?0:ms/1000,i=0,x,z,h,e;
+      m2.set(mx,my);ray.setFromCamera(m2,cam);if(!ray.ray.intersectPlane(plane,hit))hit.set(99,0,99);
+      for(x=0;x<N;x++)for(z=0;z<N;z++){
+        var px=(x-N/2)*GAP,pz=(z-N/2)*GAP;
+        h=.5+(Math.sin(px*.4+t*.9)+Math.cos(pz*.36+t*.7)+Math.sin((px+pz)*.22+t*.5)+3)*.42;
+        e=Math.hypot(px-hit.x,pz-hit.z);h+=Math.max(0,3-e)*.8;
+        o.position.set(px,h/2,pz);o.scale.set(1,h,1);o.updateMatrix();mesh.setMatrixAt(i,o.matrix);
+        col.copy(c1).lerp(c2,Math.min(Math.max(h-.6,0)/4.2,1));mesh.setColorAt(i,col);i++;
+      }
+      mesh.instanceMatrix.needsUpdate=true;mesh.instanceColor.needsUpdate=true;
+      var a=P*Math.PI*1.5,tz=13-P*18,tx=Math.sin(a)*8;
+      cp.set(tx+mx*1.1,8.5-P*4.5+my*.5,tz);cam.position.lerp(cp,reduce?1:.06);
+      look.set(Math.sin(a+.6)*3,1.2,tz-12);cam.lookAt(look);
+      pl.position.set(hit.x,3.2,hit.z);
+      pts.rotation.y=t*.02;ring.rotation.x=t*.3;ring.rotation.y=t*.2;ring2.rotation.x=-t*.25;ring2.rotation.z=t*.3;
+      ring.position.set(Math.sin(a)*3,6.6,tz-9);ring2.position.copy(ring.position);
+      R.render(S,cam);
+    }
+    addEventListener('scroll',function(){if(reduce)frame(0)},{passive:true});
+    if(reduce){frame(0)}else{(function loop(ms){frame(ms);requestAnimationFrame(loop)})(0)}
+  }catch(err){}
+})();
+</script>
+</body>
+</html>
